@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Roboto&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+}
+body {
+  min-height: 100vh;
+  background: #ebebeb;
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+}
+
+/* SEARCH ZONE */
+
+.search_zone {
+  gap: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_zone button {
+  border-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  width: 250px;
+  background-color: rgb(255, 238, 0);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.search_zone button:hover {
+  transform: scale(1.1);
+}
+
+.search_zone textarea {
+  width: 250px;
+
+  border-radius: 10px;
+  border-style: hidden;
+}
+
+/* IMAGES CARDS */
+.image_zone {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  pad: 10px;
+  gap: 10px;
+}
+.cards {
+  padding: 2px;
+  
+  
+  
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 20px;
+  transition: 0.3s;
+  background-size: cover;
+  background: rgb(230, 223, 223);
+}
+.cards label{
+  padding: 10px;
+  text-align: center;
+}
+
+.cards:hover {
+  transform: scale(1.02);
+}
